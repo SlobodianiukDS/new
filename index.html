@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Привіт, ведмід</h1>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="subscription">
+      <label class="subscr-foot-text" for="email"
+        >Подпишитесь на рассылку</label
+      >
+      <form class="subscr-form" name="subscr-form" autocomplete="on" novalidate>
+        <input
+          class="subscr-form-inp"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+        />
+        <button type="submit" class="subscr-btn">
+          Подписаться
+          <span
+            ><svg class="icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </span>
+        </button>
+      </form>
+    </div>
+    <form action="">
+      <input type="email" name="email" />
+      <button type="submit">подписаться</button>
+    </form>
+  </body>
 </html>
